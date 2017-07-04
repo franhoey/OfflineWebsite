@@ -7,3 +7,6 @@ Simply putting a default.htm is the root of a website only works for requests to
 
 ## Styling
 As this page will be rendered under any url, ensure references to css, js and images start "/" to root them from the website root.
+
+## TODO
+Check if file exists before returning the offline page (for example css, js and images required to display the offline page)
