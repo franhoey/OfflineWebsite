@@ -94,6 +94,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\EMaC_Slate.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -107,10 +108,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="OfflinePage.html" />
+    <Content Include="css\something.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\BypassHandler.cs" />
     <Compile Include="Infrastructure\CatchAllHandler.cs" />
+    <Compile Include="Infrastructure\HttpCacheUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>

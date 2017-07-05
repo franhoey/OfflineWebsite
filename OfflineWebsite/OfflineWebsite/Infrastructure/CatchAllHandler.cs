@@ -9,7 +9,7 @@ namespace OfflineWebsite.Infrastructure
 
         public void ProcessRequest(HttpContext context)
         {
-            SetCachingHeaders(context);
+            HttpCacheUtil.SetNoCacheHeaders(context);
             OutputOfflinePageHtml(context);
         }
 
@@ -19,12 +19,6 @@ namespace OfflineWebsite.Infrastructure
         {
             context.Response.TransmitFile(ConfigurationManager.AppSettings["OfflinePageFileName"]);
         }
-
-        private void SetCachingHeaders(HttpContext context)
-        {
-            context.Response.Cache.SetCacheability(HttpCacheability.NoCache);
-            context.Response.Cache.SetNoStore();
-            context.Response.Headers.Add("Pragma", "no-cache");
-        }
+        
     }
 }
