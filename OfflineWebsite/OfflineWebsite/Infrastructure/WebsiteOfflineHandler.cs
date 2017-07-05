@@ -4,7 +4,7 @@ using System.Web;
 
 namespace OfflineWebsite.Infrastructure
 {
-    public class CatchAllHandler : IHttpHandler
+    public class WebsiteOfflineHandler : IHttpHandler
     {
 
         public void ProcessRequest(HttpContext context)

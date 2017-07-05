@@ -113,7 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Infrastructure\BypassHandler.cs" />
-    <Compile Include="Infrastructure\CatchAllHandler.cs" />
+    <Compile Include="Infrastructure\WebsiteOfflineHandler.cs" />
     <Compile Include="Infrastructure\HttpCacheUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
