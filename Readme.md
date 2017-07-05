@@ -8,4 +8,4 @@ Simply putting a default.htm is the root of a website only works for requests to
 ## Styling
 As this page will be rendered under any url, ensure references to css, js and images start "/" to root them from the website root. 
 
-There is a BypassHandler that can configured in web.config to ensure any css, js or images you use are not also handled by the offline page. See web.config for examples.
+There is a BypassHandler that can configured in `web.config` to ensure any css, js or images you use are not also handled by the offline page. See `web.config` for examples.
